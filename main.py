@@ -1,12 +1,21 @@
 import os
-from flask import Flask
+from flask import Flask, Blueprint, render_template
 from xia_api_flask import Restful
 from xia_engine_test import DocumentSimple
 
 
 app = Flask(__name__)
 
+home = Blueprint('home',  __name__)
+
+
+@home.route("/", methods=["GET"])
+def homepage():
+    return render_template("index.html")
+
+
 api_blueprint = Restful.get_api_blueprint("api_v1")
+app.register_blueprint(home)
 app.register_blueprint(api_blueprint, url_prefix="/api/v1")
 app.config["resource_mapping"] = {
     "Simple": DocumentSimple

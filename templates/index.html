@@ -1,10 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
     <title>X-I-A Example Project</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body { margin: 0; padding: 0; }
+    </style>
 </head>
-<body>
-<p>Welcome</p>
-</body>
+  <body>
+    <redoc
+
+
+
+
+
+
+
+
+
+           >
+    </redoc>
+
+    <script src="/static/js/redoc.js"></script>
+
+    <script>
+
+        var spec = "_specs\openapi.yml";
+
+        Redoc.init(spec);
+    </script>
+  </body>
 </html>
