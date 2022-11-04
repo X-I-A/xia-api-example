@@ -23,6 +23,7 @@ author = 'X-I-A'
 extensions = [
     'sphinx.ext.autodoc',
     'sphinx.ext.napoleon',
+    'sphinxcontrib.redoc',
 ]
 
 templates_path = ['_templates']
@@ -43,3 +44,12 @@ source_suffix = {
     '.rst': 'restructuredtext',
     '.md': 'markdown',
 }
+
+redoc = [
+    {
+        'name': 'Open API Example',
+        'page': 'api',
+        'spec': 'openapi.yml',
+        'embed': False,
+    }
+]
