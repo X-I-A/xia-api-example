@@ -7,7 +7,7 @@ from xia_engine_test import DocumentSimple
 class Config:
     DEBUG = True
     DEVELOPMENT = True
-    API_PREFIX = "/api/v1"
+    API_PREFIX = "/api"
     RESOURCE_MAPPING = {
         "Simple": DocumentSimple
     }
@@ -26,4 +26,4 @@ class ProdConfig(Config):
 if __name__ == "__main__":
     # The compilation time operation will be defined here
     document_library = {}
-    OpenApi.compile_spec(Config.RESOURCE_MAPPING, document_library, "./static/specs/")
+    OpenApi.compile_spec(Config.RESOURCE_MAPPING, document_library, "./static/specs/", "API Example")
