@@ -10,5 +10,5 @@ def client():
 
 
 def test_simple(client):
-    r = client.get("/api/v1/")
+    r = client.get("/api/v1/Simple")
     assert r.json is not None
