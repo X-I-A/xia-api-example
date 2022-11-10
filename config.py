@@ -1,7 +1,13 @@
 import os
 import json
+from xia_fields import StringField
+from xia_engine import Document
 from xia_api import OpenApi
-from xia_engine_test import DocumentSimple
+
+
+class DocumentSimple(Document):
+    _meta = {"collection_name": "DocumentSimple"}
+    name: str = StringField(description="Name", sample="Dupont")
 
 
 class Config:

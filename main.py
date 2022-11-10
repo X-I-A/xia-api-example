@@ -9,6 +9,7 @@ app.config.from_object("config.Config")
 
 api_blueprint = Restful.get_api_blueprint("api_v1")
 api_doc_blueprint = OpenApi.get_api_doc_blueprint("api_doc")
+
 app.register_blueprint(api_blueprint, url_prefix=app.config.get("API_PREFIX", "/api"))
 app.register_blueprint(api_doc_blueprint)
 

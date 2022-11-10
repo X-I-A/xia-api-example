@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../../xia-universe/xia-api/.idea/xia-api.iml" filepath="$PROJECT_DIR$/../../xia-universe/xia-api/.idea/xia-api.iml" />
       <module fileurl="file://$PROJECT_DIR$/.idea/xia-api-example.iml" filepath="$PROJECT_DIR$/.idea/xia-api-example.iml" />
     </modules>
   </component>
