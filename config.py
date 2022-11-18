@@ -33,3 +33,4 @@ if __name__ == "__main__":
     # The compilation time operation will be defined here
     document_library = {}
     OpenApi.compile_spec(Config.RESOURCE_MAPPING, document_library, "./static/specs/", "API Example", Config.API_PREFIX)
+    OpenApi.compile_page(Config.RESOURCE_MAPPING, "./templates", False)
